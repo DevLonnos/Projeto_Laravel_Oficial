@@ -27,8 +27,12 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
+ 
 Route::get('/home','App\Http\Controllers\Principal_Controller@Principal');
 Route::get('/sobre','App\Http\Controllers\Sobre_Controller@Sobre');
 Route::get('/contato','App\Http\Controllers\Contato_Controller@Contato');
+Route::get('/fornecedores','App\Http\Controllers\Fornecedores_Controller@Fornecedores');
+
+
+
 require __DIR__.'/auth.php';
