@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class Principal_Controller extends Controller
 {
     public function Principal() {
-        return view('Principal'); 
+        return view('site.Principal'); 
     }
 }
