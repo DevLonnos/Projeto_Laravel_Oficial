@@ -38,7 +38,7 @@ Route::middleware('auth')->group(function () {
 // Route::get('/fornecedores','App\Http\Controllers\Fornecedores_Controller@Fornecedores');
 
 // Essa é outra forma de criar minhas rotas com seus importes no arquivo web.php
-Route::get('/principal',[Principal_Controller::class, 'Principal'])->name('site.Principal');
+Route::get('/',[Principal_Controller::class, 'Principal'])->name('site.Principal');
 Route::get('/sobre',[Sobre_Controller::class,'Sobre'])->name('site.Sobre');
 Route::get('/contato', [Contato_Controller::class, 'Contato'])->name('site.Contato');
 Route::get('/fornecedores', [Fornecedores_Controller::class, 'Fornecedores'])->name('site.Fornecedores');
