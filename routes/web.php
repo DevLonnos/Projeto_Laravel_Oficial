@@ -38,10 +38,10 @@ Route::middleware('auth')->group(function () {
 // Route::get('/fornecedores','App\Http\Controllers\Fornecedores_Controller@Fornecedores');
 
 // Essa é outra forma de criar minhas rotas com seus importes no arquivo web.php
-Route::get('/',[Principal_Controller::class, 'Principal'])->name('site.Principal');
-Route::get('/sobre',[Sobre_Controller::class,'Sobre'])->name('site.Sobre');
-Route::get('/contato', [Contato_Controller::class, 'Contato'])->name('site.Contato');
-Route::get('/fornecedores', [Fornecedores_Controller::class, 'Fornecedores'])->name('site.Fornecedores');
+Route::get('/',[Principal_Controller::class, 'Principal'])->name('site.principal');
+Route::get('/sobre',[Sobre_Controller::class,'Sobre'])->name('site.sobre');
+Route::get('/contato', [Contato_Controller::class, 'Contato'])->name('site.contato');
+Route::get('/fornecedores', [Fornecedores_Controller::class, 'Fornecedores'])->name('site.fornecedores');
 
 
 // A Route Fallback tem como objetivo direcionar o usuario para uma pagina que existe caso o usuario tente acessar uma página que não existe.
