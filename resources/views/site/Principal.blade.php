@@ -17,11 +17,11 @@
     <nav class="bg-gray-500 border-gray-200">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
             <a href="https://www.eteczonaleste.com.br/" target="blank" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="{{ asset('Image/48x48.png') }}" class="" alt="Etec Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap ml-3">Etec</span>
+                <img src="{{ asset('Image/192x192.png') }}" class="w-20 h-15" alt="Etec Logo" />
+                {{-- <span class="self-center text-2xl font-semibold whitespace-nowrap ml-3">Etec</span> --}}
             </a>
             <div class="flex items-center space-x-6 rtl:space-x-reverse">
-                <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+                {{-- <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a> --}}
             </div>
         </div>
     </nav>
@@ -45,15 +45,6 @@
             </div>
         </div>
     </nav>
-
-
-<style>
-p {
-    color: red;
-}
-
-
-</style>
 
 
 </body>
