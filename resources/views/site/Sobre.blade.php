@@ -10,8 +10,8 @@
     <title>Sobre</title>
 </head>
 
-<body>
-    <nav class="bg-gray-500 border-gray-200">
+<body class="min-h-screen">
+    <nav class=" bg-gray-500 border-gray-200">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
             <a href="https://www.eteczonaleste.com.br/" target="blank" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('Image/192x192.png') }}" class="w-20 h-15" alt="Etec Logo" />
@@ -20,9 +20,10 @@
         </div>
     </nav>
 
-    <div class="container flex justify-center items-center">
-        <div class="bg-white shadow-lg p-8 rounded-lg mx-auto w-3/4" style="max-width: 600px;">
-            <h1 class="text-red-700 text-center p-5 underline decoration-red-500 decoration-solid">ETEC ZONA LESTE</h1>
+    <div class="flex justify-center items-center"> <!--Div Container -->
+
+    <div class="bg-white shadow-lg p-8 rounded-lg" style="max-width: 40rem; margin: 0 auto;">
+            <h1 class="text-red-700 text-center p-5 underline  decoration-solid">ETEC ZONA LESTE</h1>
 
             <p class="text-justify p-2">
                 Localizada estrategicamente na Avenida Águia de Haia, na Zona Leste de São Paulo, a Etec Zona Leste se destaca como um importante

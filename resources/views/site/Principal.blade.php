@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {{-- @vite('resources/css/app.css') --}}
+
     @vite(['resources/css/app.css','resources/js/app.js'])
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <title>Home</title>
@@ -21,7 +21,8 @@
                 {{-- <span class="self-center text-2xl font-semibold whitespace-nowrap ml-3">Etec</span> --}}
             </a>
             <div class="flex items-center space-x-6 rtl:space-x-reverse">
-                {{-- <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a> --}}
+                 <a href="/login" class="text-sm  text-gray-200 dark:text-gray-500 hover:underline">Login</a>
+                 <a href="/register" class="text-sm  text-gray-200 dark:text-gray-500 hover:underline">Register</a>
             </div>
         </div>
     </nav>
@@ -30,13 +31,13 @@
             <div class="flex items-center">
                 <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                     <li>
-                        <a href="{{ route('site.principal')}}" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                        <a href="/" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="{{ route('site.contato')}}" class="text-gray-900 dark:text-white hover:underline">Contato</a>
+                        <a href="/contato" class="text-gray-900 dark:text-white hover:underline">Contato</a>
                     </li>
                     <li>
-                        <a href="{{ route('site.sobre')}}" class="text-gray-900 dark:text-white hover:underline">Sobre</a>
+                        <a href="/sobre" class="text-gray-900 dark:text-white hover:underline">Sobre</a>
                     </li>
                     <li>
                         <a href="#" class="text-gray-900 dark:text-white hover:underline">Noticias</a>
