@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Principal_Controller;
 use App\Http\Controllers\Sobre_Controller;
 use App\Http\Controllers\Contato_Controller;
+use App\Http\Controllers\Noticias_Controller;
 use App\Http\Controllers\Fornecedores_Controller;
 
 /*
@@ -41,13 +42,15 @@ Route::middleware('auth')->group(function () {
 Route::get('/',[Principal_Controller::class, 'Principal'])->name('site.principal');
 Route::get('/sobre',[Sobre_Controller::class,'Sobre'])->name('site.sobre');
 Route::get('/contato', [Contato_Controller::class, 'Contato'])->name('site.contato');
+Route::get('/noticias', [Noticias_Controller::class, 'Noticias'])->name('site.noticias');
 Route::get('/fornecedores', [Fornecedores_Controller::class, 'Fornecedores'])->name('site.fornecedores');
 
 
 // A Route Fallback tem como objetivo direcionar o usuario para uma pagina que existe caso o usuario tente acessar uma página que não existe.
 
 Route::fallback(function() {
-    echo "A rota acessada não existe. <a href=".route('site.Principal').">clique aqui</a> para ir para página principal.";
+    // echo "A rota acessada não existe. <a href=".route('site.Principal').">clique aqui</a> para ir para página principal.";
+    return redirect()->route("site.principal");
 });
 
 require __DIR__.'/auth.php';

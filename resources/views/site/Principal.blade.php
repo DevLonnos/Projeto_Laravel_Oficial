@@ -40,14 +40,14 @@
                         <a href="/sobre" class="text-gray-900 dark:text-white hover:underline">Sobre</a>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Noticias</a>
+                        <a href="/noticias" class="text-gray-900 dark:text-white hover:underline">Noticias</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
+    <h1>Bem-vindo(a) ao site da Etec Zona Leste.</h1>
 </body>
 
 </html>

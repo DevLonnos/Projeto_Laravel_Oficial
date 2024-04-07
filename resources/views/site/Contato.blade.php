@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>Document</title>
+    <title>Contato</title>
 </head>
 
 <body class="min-h-screen">
 
     <nav class=" bg-gray-500 border-gray-200">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-            <a href="https://www.eteczonaleste.com.br/" target="blank"
+            <a href="/"
                 class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('Image/192x192.png') }}" class="w-20 h-15" alt="Etec Logo" />
                 {{-- <span class="self-center text-2xl font-semibold whitespace-nowrap ml-3">Etec</span> --}}
