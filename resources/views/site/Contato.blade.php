@@ -18,6 +18,9 @@
                 <img src="{{ asset('Image/192x192.png') }}" class="w-20 h-15" alt="Etec Logo" />
                 {{-- <span class="self-center text-2xl font-semibold whitespace-nowrap ml-3">Etec</span> --}}
             </a>
+            <div class="flex items-center space-x-6 rtl:space-x-reverse">
+                <a href="/" class="text-sm  text-gray-200 dark:text-gray-500 hover:underline">Voltar</a>
+            </div>
         </div>
     </nav>
 
